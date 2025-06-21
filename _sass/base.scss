@@ -4,17 +4,17 @@ body {
   margin: auto;
   max-width: 70ch;
   color: #0a0024;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1.5rem;
   min-height: 100vh;
 }
 
 header {
-  background: #00ffa28f;
+  background: #e6fbe6;
   color: #00611d;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
   border-radius: 1rem 1rem 0 0;
-  box-shadow: 0 2px 8px rgba(79,70,229,0.1);
-  margin-bottom: 2rem;
+  box-shadow: 0 4px 16px rgba(34,197,94,0.10);
+  margin-bottom: 2.5rem;
   text-align: center;
 }
 
@@ -24,86 +24,100 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.01em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #2563eb;
+  text-decoration: underline;
+  border-bottom: none;
+  font-weight: bold;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  color: #22c55e;
+  text-decoration-color: #22c55e;
 }
 
 a {
-  color: #2564eb6b;
-  text-decoration: none;
-  border-bottom: 1px dotted #617cff;
-  transition: color 0.2s, border-bottom 0s;
+  color: #2563eb;
+  text-decoration: underline;
+  border-bottom: none;
+  transition: color 0.2s, text-decoration-color 0.2s;
 }
 a:hover {
-  color: #0062ff;
-  border-bottom: 2px solid #6366f1;
+  color: #22c55e;
+  text-decoration-color: #22c55e;
 }
 
 main, .post, .content {
   background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
-  padding: 2rem;
-  margin-bottom: 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.07);
+  padding: 2.5rem 2rem;
+  margin-bottom: 2.5rem;
 }
 
 code, pre {
-  background: #232136;
-  color: #e0def4;
-  border-radius: 0.3em;
-  padding: 0.2em 0.4em;
-  overflow-x: auto;
+  background: #f1f5f9;
+  color: #2d3748;
+  border-radius: 0.4em;
   font-family: 'Fira Mono', 'Consolas', monospace;
   font-size: 1em;
-}
-
-.highlight .k   { color: #c4a7e7; }      /* keywords (purple) */
-.highlight .s   { color: #eb6f92; }      /* strings (pink) */
-.highlight .mi  { color: #f6c177; }      /* numbers (yellow) */
-.highlight .nb  { color: #9ccfd8; }      /* builtins (cyan) */
-.highlight .c1  { color: #6e6a86; font-style: italic; } /* comments (gray) */
-.highlight .o   { color: #ea9a97; }      /* operators (red) */
-.highlight .nn  { color: #31748f; }      /* class names (blue) */
-.highlight .nf  { color: #f6c177; }      /* function names (yellow) */
-.highlight .bp  { color: #9ccfd8; }      /* booleans (cyan) */
-.highlight .err { color: #eb6f92; background: #2a273f; } /* errors (pink bg) */
-
-pre {
-  padding: 1.2em;
+  padding: 0.6em 1em;
   overflow-x: auto;
-  background: #232136;
-  color: #e0def4;
-  border-radius: 0.3em;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
+
+/* Syntax highlighting for light theme */
+.highlight .k   { color: #5b21b6; }
+.highlight .s   { color: #b91c1c; }
+.highlight .mi  { color: #ca8a04; }
+.highlight .nb  { color: #2563eb; }
+.highlight .nv  { color: #059669; }
+.highlight .c1, .highlight .c { color: #64748b; font-style: italic; }
+.highlight .o   { color: #d97706; }
+.highlight .nn  { color: #0e7490; }
+.highlight .nf  { color: #ea580c; }
+.highlight .bp  { color: #2563eb; }
+.highlight .nt  { color: #5b21b6; }
+.highlight .err { color: #b91c1c; background: #fee2e2; }
 
 ul, ol {
-  margin-left: 2rem;
-  margin-bottom: 1rem;
+  margin-left: 2.2rem;
+  margin-bottom: 1.2rem;
+  padding-left: 0.5rem;
 }
 
 blockquote {
   border-left: 4px solid #a5b4fc;
   background: #f1f5f9;
   color: #334155;
-  padding: 1rem 1.5rem;
-  margin: 1.5rem 0;
+  padding: 1.2rem 1.7rem;
+  margin: 1.7rem 0;
   font-style: italic;
-  border-radius: 0.5rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
 img {
   max-width: 100%;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  margin: 1rem 0;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  margin: 1.2rem 0;
+  display: block;
 }
 
 footer {
   background: #f1f5f9;
   color: #334155;
   text-align: center;
-  padding: 1.5rem 1rem;
-  border-radius: 0 0 1rem 1rem;
+  padding: 1.7rem 1.2rem;
+  border-radius: 0 0 1.2rem 1.2rem;
   box-shadow: 0 -2px 8px rgba(79,70,229,0.05);
-  font-size: 0.95em;
+  font-size: 1em;
+  margin-top: 2rem;
 }
