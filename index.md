@@ -3,9 +3,10 @@ title: Home
 layout: default
 ---
 
-# jekyll-theme
-test describtion
+# example header
+text
 
-```
-example code
+```python
+for a in range(0, 100):
+    return 0
 ```
