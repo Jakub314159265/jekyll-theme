@@ -3,4 +3,4 @@ title: Home
 ---
 
 # jekyll-theme
-test
+$mathBB{test_LaTeX}$
