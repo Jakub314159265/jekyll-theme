@@ -17,10 +17,20 @@ test_string = "abcd"
 A = [0, 1, "test"]
 ```
 
-```text
-example text
-```
+## example list
+- **a**
+- **b**
+    - **b1**
+    - **b2**
+* **c**
 
-```bash
-sudo ls -a
-```
+1. First item
+2. Second item
+    1. Second and half item
+3. Third item
+
+## blockquote example
+> This is blockquote
+> - includes lists
+> - i think at least
+

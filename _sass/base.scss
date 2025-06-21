@@ -34,7 +34,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  margin: 0.6rem 0;
   letter-spacing: 0.01em;
 
   a {
@@ -113,6 +112,25 @@ ul, ol {
   margin-left: 2.2rem;
   margin-bottom: 1.2rem;
   padding-left: 0.5rem;
+  font-size: 1.08em;
+  line-height: 1.7;
+  list-style-position: inside;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ul li::marker {
+  color: #ff6a00;
+}
+
+ol li::marker {
+  color: #2563eb;
 }
 
 blockquote {
