@@ -3,4 +3,4 @@ title: Home
 ---
 
 # jekyll-theme
-$mathBB{test_LaTeX}$
+$$ \nabla_\boldsymbol{x} J(\boldsymbol{x}) $$
