@@ -1,6 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
     {% include head.html %}
+  </head>
   <body>
-        {{ content }}
-  </body>
-</html>
+    <header>
+      <h1><a href="{{ site.baseurl | default: '/' }}">{{ site.title }}</a></h1>
+      {% if site.description %}
+        <p>{{ site.description }}</p>
+      {% endif %}
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      <p>{{ site.time | date: "%Y" }} {{ site.title }}. Powered by <a href="https://jekyllrb.com/">Jekyll</a>.</p>
+    </footer>

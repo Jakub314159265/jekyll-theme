@@ -5,3 +5,7 @@ layout: default
 
 # jekyll-theme
 test describtion
+
+```
+example code
+```
